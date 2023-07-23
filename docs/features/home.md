@@ -19,3 +19,7 @@ I can click on the New thread button and be redirected to the thread creation vi
 I can click on my profile picture in the navbar and see the user menu.
 
 I can click on the user name under the thread and be redirected to the user detail view.
+
+### Wireframe
+
+![Home](./images/home.png)
