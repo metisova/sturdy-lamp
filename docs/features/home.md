@@ -17,3 +17,5 @@ I can click on any thread and be redirected to the thread view to see the detail
 I can click on the New thread button and be redirected to the thread creation view.
 
 I can click on my profile picture in the navbar and see the user menu.
+
+I can click on the user name under the thread and be redirected to the user detail view.
