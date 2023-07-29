@@ -34,31 +34,14 @@
 ```bash
 # clone repository
 git clone git@github.com:metisova/sturdy-lamp.git
-```
 
-### Start the server
+# go to app
+cd app
 
-```bash
-# cd into server
-cd server
-
-# install server's dependencies
+# install dependencies
 npm install
 
-# run server
-npm run start:server
-```
-
-### Start the client
-
-```bash
-# open another terminal and cd into client
-cd client
-
-# install client's dependencies
-npm install
-
-# run client
+# run the app
 npm run dev
 ```
 
