@@ -21,7 +21,7 @@
 - Profile management
 - Post creation and management
 
-**User stories & wireframes**: [link](/docs/features/)
+**Wireframes**: [link](/docs/features/)
 
 ## Technologies
 
