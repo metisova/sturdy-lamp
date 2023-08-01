@@ -1,6 +1,10 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+const sum = (a: number, b: number) => a * b;
+
+export const result = sum('two', 'one');
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -40,6 +44,7 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
+        hey
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
