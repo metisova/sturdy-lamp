@@ -1,4 +1,4 @@
-import CssBaseline from '@mui/material/CssBaseline';
+import { CssBaseline } from "@mui/material";
 
 export const metadata = {
   title: "Sturdy Lamp",
