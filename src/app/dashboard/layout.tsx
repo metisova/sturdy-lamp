@@ -1,5 +1,7 @@
-import { Box, AppBar, Toolbar, Typography } from "@mui/material";
-import Main from "../../components/Main";
+import { Box, AppBar, Toolbar, Typography, Avatar } from '@mui/material';
+import Image from 'next/image';
+import Main from '../../components/Main';
+import Logo from './logo.png';
 
 export default function DashboardLayout({
   children,
@@ -12,17 +14,20 @@ export default function DashboardLayout({
         position="absolute"
         elevation={0}
         sx={{
-          backgroundColor: "#fff",
-          color: "#000",
-          borderBottom: "1px solid #e0e0e0",
+          backgroundColor: '#fff',
+          color: '#000',
+          borderBottom: '1px solid #e0e0e0',
         }}
       >
         <Toolbar>
-          {/* TODO add logo */}
+          <Image src={Logo} alt="Logo" width={50} height={50} />
           <Typography component="h1" variant="h6" sx={{ flexGrow: 1 }}>
             Sturdy Lamp
           </Typography>
-          {/* TODO add user avatar */}
+          <Avatar
+            alt="Cindy Baker"
+            src="https://mui.com/static/images/avatar/3.jpg"
+          />
         </Toolbar>
       </AppBar>
       <Main>{children}</Main>
