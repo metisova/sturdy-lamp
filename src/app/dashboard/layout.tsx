@@ -1,7 +1,7 @@
-import { Box, AppBar, Toolbar, Typography, Avatar } from '@mui/material';
-import Image from 'next/image';
-import Main from '../../components/Main';
-import Logo from './logo.png';
+import { Box, AppBar, Toolbar, Typography, Avatar } from "@mui/material";
+import Image from "next/image";
+import Main from "../../components/Main";
+import Logo from "./logo.png";
 
 export default function DashboardLayout({
   children,
@@ -14,9 +14,9 @@ export default function DashboardLayout({
         position="absolute"
         elevation={0}
         sx={{
-          backgroundColor: '#fff',
-          color: '#000',
-          borderBottom: '1px solid #e0e0e0',
+          backgroundColor: "#fff",
+          color: "#000",
+          borderBottom: "1px solid #e0e0e0",
         }}
       >
         <Toolbar>
@@ -30,7 +30,10 @@ export default function DashboardLayout({
           />
         </Toolbar>
       </AppBar>
-      <Main>{children}</Main>
+      <Main>
+        <Toolbar />
+        {children}
+      </Main>
     </Box>
   );
 }
