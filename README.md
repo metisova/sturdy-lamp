@@ -13,7 +13,7 @@
 
 **Why?** This project serves as a learning playground to deepen authors' knowledge in web technologies.
 
-**Demo:** [link]()
+**Demo:** [link](https://sturdy-lamp.vercel.app/)
 
 ## Features
 
