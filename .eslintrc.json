@@ -11,7 +11,9 @@
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "semi": "error",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "import/extensions": "off"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
