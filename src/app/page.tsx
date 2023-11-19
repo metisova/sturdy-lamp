@@ -1,5 +1,5 @@
-import Link from "next/link";
+import ThreadList from "../components/ThreadList";
 
 export default function Page() {
-  return <Link href="/dashboard">Dashboard page</Link>;
+  return <ThreadList />;
 }
