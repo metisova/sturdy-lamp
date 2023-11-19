@@ -1,8 +1,6 @@
 export interface Thread {
-  id: string;
+  id: number;
   title: string;
-  content: string;
-  author: string;
-  datePosted: string;
-  commentCount: number;
+  body: string;
+  userId: number;
 }
