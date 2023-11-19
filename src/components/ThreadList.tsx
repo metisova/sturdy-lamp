@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useQuery } from '@tanstack/react-query';
-import { CircularProgress, Stack, Alert } from '@mui/material';
-import ThreadPreview from './ThreadPreview';
-import { Thread } from '@/types';
+import { useQuery } from "@tanstack/react-query";
+import { CircularProgress, Stack, Alert } from "@mui/material";
+import ThreadPreview from "./ThreadPreview";
+import { Thread } from "@/types";
 
-const genericErrorMessage = 'Sorry, error. Try to reload!';
+const genericErrorMessage = "Sorry, error. Try to reload!";
 
 function ThreadList() {
   const { isLoading, data, error } = useQuery<Thread[]>({
-    queryKey: ['threads'],
+    queryKey: ["threads"],
     queryFn: () =>
-      fetch('https://jsonplaceholder.typicode.com/posts').then((res) =>
+      fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
         res.json(),
       ),
   });

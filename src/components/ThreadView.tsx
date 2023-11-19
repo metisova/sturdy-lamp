@@ -1,23 +1,21 @@
-import { Box, Button, Container, List } from '@mui/material';
-import Link from 'next/link';
-import ThreadList from './ThreadList';
+import { Box, Button, Container, List } from "@mui/material";
+import Link from "next/link";
+import ThreadList from "./ThreadList";
 
 function ThreadView() {
- 
-
   return (
     <Container>
       <Box
         sx={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
         <h3>Thread</h3>
         <Link href="/newThread">
           <Button
-            sx={{ textTransform: 'none' }}
+            sx={{ textTransform: "none" }}
             size="small"
             variant="contained"
           >
@@ -25,7 +23,7 @@ function ThreadView() {
           </Button>
         </Link>
       </Box>
-      <List sx={{ bgcolor: 'background.paper' }}>
+      <List sx={{ bgcolor: "background.paper" }}>
         <ThreadList />
       </List>
     </Container>

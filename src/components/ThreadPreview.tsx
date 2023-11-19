@@ -1,4 +1,4 @@
-import { ListItem, ListItemText, Stack} from "@mui/material";
+import { ListItem, ListItemText, Stack } from "@mui/material";
 import { ModeCommentOutlined } from "@mui/icons-material";
 
 import { Thread } from "@/types";
