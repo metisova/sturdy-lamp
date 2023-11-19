@@ -92,7 +92,7 @@ const fakeData: Thread[] = [
 
 function ThreadList() {
   // eslint-disable-next-line
-  const { isLoading, data } = useQuery({
+  const { isLoading, error, data } = useQuery<Thread[]>({
     queryKey: ["threads"],
     queryFn: () =>
       fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
