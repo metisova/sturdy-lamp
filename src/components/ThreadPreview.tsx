@@ -1,7 +1,7 @@
-import { ListItem, ListItemText, Stack, Box } from '@mui/material';
-import { ModeCommentOutlined } from '@mui/icons-material';
+import { ListItem, ListItemText, Stack, Box } from "@mui/material";
+import { ModeCommentOutlined } from "@mui/icons-material";
 
-import { Thread } from '@/types';
+import { Thread } from "@/types";
 
 function ThreadPreview({ thread }: { thread: Thread }) {
   return (
