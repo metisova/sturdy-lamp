@@ -12,8 +12,9 @@ export default function AddThreadForm() {
     handleSubmit,
     formState: { errors },
   } = useForm<AddThreadFormFields>();
+  const onSubmit: SubmitHandler<AddThreadFormFields> = (data) =>
     // eslint-disable-next-line
-  const onSubmit: SubmitHandler<AddThreadFormFields> = (data) => console.log(data);
+    console.log(data);
 
   // eslint-disable-next-line
   console.log({ errors });
@@ -26,4 +27,4 @@ export default function AddThreadForm() {
       <input type="submit" />
     </form>
   );
-};
+}
