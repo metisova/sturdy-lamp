@@ -1,8 +1,8 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-
 import { Box, Button, Container, List } from "@mui/material";
+import Link from "next/link";
 import ThreadPreview from "./ThreadPreview";
 import { Thread } from "@/types";
 
@@ -110,9 +110,15 @@ function ThreadList() {
         }}
       >
         <h3>Thread</h3>
-        <Button sx={{ textTransform: "none" }} size="small" variant="contained">
-          New thread
-        </Button>
+        <Link href="/newThread">
+          <Button
+            sx={{ textTransform: "none" }}
+            size="small"
+            variant="contained"
+          >
+            New thread
+          </Button>
+        </Link>
       </Box>
       <List sx={{ bgcolor: "background.paper" }}>
         {fakeData.map((thread) => (
