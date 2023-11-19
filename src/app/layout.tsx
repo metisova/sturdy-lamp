@@ -1,4 +1,5 @@
 import { CssBaseline } from "@mui/material";
+import Providers from "@/utils/provider";
 
 export const metadata = {
   title: "Sturdy Lamp",
@@ -13,7 +14,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CssBaseline />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

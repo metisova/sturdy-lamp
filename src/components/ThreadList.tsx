@@ -1,3 +1,9 @@
+'use client';
+
+import {
+  useQuery,
+} from '@tanstack/react-query';
+
 import { Box, Button, Container, List } from '@mui/material';
 import ThreadPreview from './ThreadPreview';
 import { Thread } from '@/types';
@@ -87,6 +93,12 @@ const fakeData: Thread[] = [
 ];
 
 function ThreadList() {
+  // eslint-disable-next-line
+  const { isLoading, data } = useQuery({
+    queryKey: ['threads'],
+    queryFn: () => fetch('https://jsonplaceholder.typicode.com/posts').then(res => res.json()),
+  });
+
   return (
     <Container>
       <Box
