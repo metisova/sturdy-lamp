@@ -7,6 +7,7 @@ import {
   Avatar,
 } from "@mui/material";
 import Image from "next/image";
+import Providers from "@/utils/provider";
 import Main from "../components/Main";
 import Logo from "./logo.png";
 
@@ -46,7 +47,7 @@ export default function RootLayout({
           </AppBar>
           <Main>
             <Toolbar />
-            {children}
+            <Providers>{children}</Providers>
           </Main>
         </Box>
       </body>
